@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <script src="./js/aframe.min.js"></script>
+  <script src="./js/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-assets>
+        <video
+          id="penguin-sledding"
+          autoplay
+          loop="true"
+          muted="false"
+          src="../silvia-negrao-dinossauros.mp4"
+        ></video>
+      </a-assets>
+      <a-marker preset="hiro">
+        <!-- <a-box position='0 0.5 0' material='color: yellow; opacity: 0.5;'></a-box> -->
+        <a-video
+          src="#penguin-sledding"
+          position="0 0.5 0"
+          rotation="270 0 0"
+          play="true"
+        ></a-video>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+
+    <script>
+      window.addEventListener("click", function() {
+        var v = document.querySelector("#penguin-sledding");
+        v.play();
+      });
+    </script>
+  </body>
+</html>

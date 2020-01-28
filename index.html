@@ -9,13 +9,18 @@
           id="dinos"
           autoplay
           loop="true"
-          muted="false"
+          muted
           src="./images/silvia-negrao-dinossauros.mp4"
         ></video>
       </a-assets>
       <a-marker preset="hiro">
         <!-- <a-box position='0 0.5 0' material='color: yellow; opacity: 0.5;'></a-box> -->
-        <a-video src="#dinos" position="0 0.5 0" rotation="270 0 0"></a-video>
+        <a-video
+          src="#dinos"
+          position="0 0.5 0"
+          rotation="270 0 0"
+          play="true"
+        ></a-video>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>

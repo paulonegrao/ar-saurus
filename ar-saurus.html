@@ -1,0 +1,42 @@
+<!-- Augmented Reality on the Web in 10 lines of html! https://github.com/jeromeetienne/ar.js -->
+<script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
+<script>
+  THREEx.ArToolkitContext.baseURL =
+    "https://rawgit.com/jeromeetienne/ar.js/master/three.js/";
+</script>
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene
+    embedded
+    artoolkit="sourceType: webcam;"
+    arjs="debugUIEnabled: false;"
+  >
+    <a-assets>
+      <video
+        id="dinos"
+        autoplay
+        loop="true"
+        src="./assets/silvia-negrao-dinossauros.mp4"
+        crossorigin
+        webkit-playsinline
+        playsinline
+        controls
+      ></video>
+    </a-assets>
+    <a-marker
+      preset="custom"
+      type="pattern"
+      url="./assets/pattern-rabiola-qr.patt"
+    >
+      <a-video
+        src="#dinos"
+        width="1.8"
+        height="1"
+        position="0 0.5 0"
+        rotation="270 0 0"
+        play="true"
+      ></a-video>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>

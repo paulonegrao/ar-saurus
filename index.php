@@ -1,1 +1,1 @@
-<?php include_once("ar-saurus.html"); ?>
+<?php include_once("index.html"); ?>

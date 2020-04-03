@@ -12,6 +12,7 @@ The best way to use the app is:
 * Smartphones: the QR code will direct you to the AR-Saurus URL. After landing the AR-Saurus app and accepting the confirmation msgs, you should touch the video object that will appear right above the markers in order to play the video.
 * Desktops: go to your favorite browser and navigate to the AR-Saurus URL. Keep the markers framed up by the webcam and the video will automatically start playing.
 ## Markers
+Print the following markers image to use with AR-Saurus app on a smartphone or desktop camera
 ![AR-Saurus](https://github.com/paulonegrao/ar-saurus/blob/master/images/pattern-pn-marker-qr-saurus.png?raw=true
 )
 

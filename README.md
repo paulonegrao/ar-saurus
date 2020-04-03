@@ -3,7 +3,8 @@ AR to play Silvia Negrao's videos &amp; other web based Augmented Reality elemen
 ## Description
 The app combines AR.js and A-Frame solutions to introduce Augmented Reality objects in a real scene. In this particular context, it will insert video and audio into real scenarios captured through the lens of smartphones cameras and/or desktop's webcams.
 To launch the AR, the app uses a combination of customized QR code and anchor marker. The first will direct the user to a Heroku URL that hosts the AR-Saurus app. The second will server like an anchor reference to the AR objects (in this case, a video/audio media).
-![AR-Saurus Demo](https://github.com/paulonegrao/ar-saurus/blob/master/images/ar-saurus-demo.png?raw=true
+
+![AR-Saurus Demo](https://github.com/paulonegrao/ar-saurus/blob/master/images/ar-saurus-demo1.png?raw=true
 )
 ## Usage
 The best way to use the app is:
